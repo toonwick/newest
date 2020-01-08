@@ -1,0 +1,24 @@
+{
+  "name": "newest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd backend && npm run start\" \"cd frontend && npm run start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toonwick/newest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toonwick/newest/issues"
+  },
+  "homepage": "https://github.com/toonwick/newest#readme",
+  "dependencies": {
+    "concurrently": "^5.0.2"
+  }
+}
