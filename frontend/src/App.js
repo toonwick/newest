@@ -1,5 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
 import './App.css';
+import store from './store';
+import Customers from './components/customers';
+import Products from './components/products';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,9 +24,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <p>{this.state.apiResponse}</p>
-      </div>
+      <Provider store={store}>
+        <div className="App">
+          <p>{this.state.apiResponse}</p>
+          <Customers />
+          <Products />
+        </div>
+      </Provider>
     );
   }
 }

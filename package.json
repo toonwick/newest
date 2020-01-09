@@ -2,7 +2,7 @@
   "name": "newest",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "start": "concurrently \"cd backend && npm run start\" \"cd frontend && npm run start\"",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,14 +12,15 @@
     "url": "git+https://github.com/toonwick/newest.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Toon Wichaichansakul",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/toonwick/newest/issues"
   },
   "homepage": "https://github.com/toonwick/newest#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "concurrently": "^5.0.2",
-    "cors": "^2.8.5"
+    "faker": "^4.1.0"
   }
 }
